@@ -31,5 +31,28 @@ In reverse engineering helps identify the structure of a binary. Key sections li
 
 
 ###############################################
+### Task 2: External Library Dependencies
+**File**: `external_library.txt`
+- Use `ldd` to identify external library dependencies
+- Distinguish between system libraries and custom/external libraries
+- Document non-standard library dependencies
 
+## Usage
 
+### ELF Header Analysis
+```bash
+chmod +x get_entry_point.sh
+./get_entry_point.sh task0
+```
+
+### Section Analysis
+```bash
+readelf -S task1
+# Document unusual section size in size.txt
+```
+
+### Library Dependencies
+```bash
+ldd task2
+# Document external libraries in external_library.txt
+```
